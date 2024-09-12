@@ -60,7 +60,7 @@
   <div class="sidebar">
     <ul>
       <li><a class="abtn" href="#home">Home</a></li>
-      <li><a class="abtn" href="#Music">Music</a></li>
+      <li><a class="abtn" href="#music-section">Music</a></li>
       <li><a class="abtn" href="#gallery">Gallery</a></li>
       <li><a class="abtn" href="#contact">Contact</a></li>
     </ul>
@@ -75,12 +75,12 @@
         <div class="text-content">
           <h1>Balach Hashmi</h1>
           <p>Singer | Writer | Producer</p>
-          <a href="#Music" class="btn">Discover Music</a>
+          <a href="#music-section" class="btn">Discover Music</a>
         </div>
       </div>
     </div>
   </header>
-  <section class="music-section">
+  <section class="music-section" id="music-section">
     <div class="music-container">
       <h2>Music Section</h2>
       <div class="music-player">
@@ -106,13 +106,7 @@
         </audio>
         
       </div>
-      <div class="music-player">
-        <audio controls>
-          <source src="audio/4.mp3" type="audio/mp3">
-          Your browser does not support the audio element.
-        </audio>
-        
-      </div>
+      
     </div>
   </section>
   
@@ -158,17 +152,29 @@
   <section id="contact" class="contact">
     <div class="contact-container">
       <div class="contact-form">
-        <form id="contact-form" action="#" method="post">
-          <input type="text" id="name" name="name" placeholder="Your Name" required>
-          <input type="email" id="email" name="email" placeholder="Your Email" required>
-          <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
-          <button type="submit">Send Message</button>
-        </form>
+        <form
+        action="https://formspree.io/f/xvgpnapv"
+        method="POST"
+      >
+        <label>
+          Your email:
+          <input type="email" name="email">
+        </label>
+        <label>
+          Your message:
+          <textarea name="message"></textarea>
+        </label>
+        <!-- your other form fields go here -->
+        <button type="submit">Send</button>
+      </form>
       </div>
       <div class="social-links">
         <h3>Connect with Me</h3>
         <div class="social-link">
           <a href="https://www.facebook.com/people/Singer-Balach-Hashmi/100090486743343/" class="social-icon"><i class="fab fa-facebook-f"></i> Facebook </a>
+        </div>
+        <div class="social-link">
+          <a href="#" class="social-icon"><i class="fab fa-twitter"></i> Twitter </a>
         </div>
         <div class="social-link">
             <a href="https://www.tiktok.com/@balachhashmi510?_r=1&_d=e4bm0g2icji25i&sec_uid=MS4wLjABAAAAPWZL-HzmZTgSQEulP10brwSfvVul96TFtswEfR_BY8_uUu9ud4CQMYwcIEWfINv-&share_author_id=6958328093736190981&sharer_language=en&source=h5_m&u_code=diblml4833iie9&timestamp=1726059725&user_id=6958328093736190981&sec_user_id=MS4wLjABAAAAPWZL-HzmZTgSQEulP10brwSfvVul96TFtswEfR_BY8_uUu9ud4CQMYwcIEWfINv-&utm_source=whatsapp&utm_campaign=client_share&utm_medium=android&share_iid=7413178325634041607&share_link_id=f79bfcbc-176b-4fce-9aeb-f7d3371cd8d2&share_app_id=1233&ugbiz_name=ACCOUNT&ug_btm=b8727%2Cb4907&social_share_type=5&enable_checksum=1" class="social-icon"><i class="fab fa-tiktok"></i> Tiktok </a>
